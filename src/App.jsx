@@ -107,11 +107,9 @@ return(
     {
       listItems.map((listItem)=>(
         <ListItem
-        id={listItem.id}
-        name={listItem.name}
-        quantity={listItem.quantity}
-        unit={listItem.unit}
-        checked={listItem.checked}
+        item={listItem}
+        listItems={listItems}
+        setListItems={setListItems}
         handleCheckboxChange={handleCheckboxChange}
         />
       ))
